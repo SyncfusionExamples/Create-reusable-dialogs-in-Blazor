@@ -1,2 +1,2 @@
-# Create-reusable-dialogs-in-Blazor
+# Create reusable dialogs in Blazor
 How to create reusable dialogs in Blazor.
