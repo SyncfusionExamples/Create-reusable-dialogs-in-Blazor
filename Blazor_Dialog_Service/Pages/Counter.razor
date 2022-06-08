@@ -1,0 +1,21 @@
+﻿@page "/counter"
+
+@using Blazor_Dialog_Service.Components
+
+@inject DialogService DialogServices
+
+<button class="e-btn" @onclick="@showDialog"> Show Dialog </button>
+
+@code {
+    private void showDialog()
+    {
+        this.DialogServices.Open(new DialogOptions()
+        {
+            Header = "Dialog from Page 2",
+            Content =@<p>Dialog Content</p>, // Fragment loaded from external component
+            IsModal = true,
+            ShowCloseIcon = true,
+            //FooterTemplate = @<button> OK </button> // Fragments
+        });
+    }
+}

@@ -1,0 +1,16 @@
+﻿@page "/"
+@using Blazor_Dialog_Service.Components
+@inject DialogService DialogServices
+
+<button class="e-btn" @onclick="@showDialog"> Show Dialog </button>
+
+@code {
+    private void showDialog()
+    {
+      this.DialogServices.Open(new DialogOptions()
+       {
+         Content =@<b>Alert</b>, // Fragment loaded from external component
+       });
+    }
+}
+
