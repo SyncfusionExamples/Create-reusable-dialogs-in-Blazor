@@ -4,7 +4,8 @@ This sample explains about how to create reusable dialogs in Blazor Dialog.
 
 ## Prerequisites
 
-* Visual Studio 2022
+* .NET 10 SDK
+* Visual Studio 2022 or later
 
 ## How to run the project
 

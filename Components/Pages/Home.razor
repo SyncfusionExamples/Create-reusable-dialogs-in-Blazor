@@ -1,0 +1,19 @@
+@page "/"
+@rendermode InteractiveServer
+
+@inject SfDialogService DialogService
+
+<PageTitle>Home</PageTitle>
+
+<div>
+    <SfButton @onclick="@AlertBtn">Alert</SfButton>
+</div>
+<div class="status" style="padding-top:10px">@DialogStatus</div>
+@code {
+    private string? DialogStatus { get; set; }
+    private async Task AlertBtn()
+    {
+        await DialogService.AlertAsync("10% of battery remaining", "Low Battery");
+        this.DialogStatus = "The user closed the Alert dialog";
+    }
+}
