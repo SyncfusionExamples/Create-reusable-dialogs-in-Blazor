@@ -1,7 +1,6 @@
-﻿@page "/"
+@page "/"
+@rendermode InteractiveServer
 
-@using Syncfusion.Blazor.Popups
-@using Syncfusion.Blazor.Buttons
 @inject SfDialogService DialogService
 
 
@@ -10,7 +9,7 @@
 </div>
 <div class="status" style="padding-top:10px">@DialogStatus</div>
 @code {
-    private string DialogStatus { get; set; }
+    private string? DialogStatus { get; set; }
     private async Task AlertBtn()
     {
         await DialogService.AlertAsync("10% of battery remaining", "Low Battery");
