@@ -103,39 +103,3 @@
         overflow-y: auto;
     }
 }
-
-.px-3 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-.ps-3 {
-    padding-left: 1rem;
-}
-
-.navbar-dark .navbar-brand {
-    color: #fff;
-    text-decoration: none;
-}
-
-.container-fluid {
-    width: 100%;
-}
-
-.nav {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
-}
-
-.flex-column {
-    flex-direction: column;
-}
-
-.nav-link {
-    display: block;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-}
